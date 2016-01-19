@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://www.qtrac.eu/pipbook.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <link href="./Python in Practice_files/style.css" rel="stylesheet" type="text/css">
+    <link rel="icon" href="http://www.qtrac.eu/favicon.png" type="image/png">
+    <link rel="shortcut icon" href="http://www.qtrac.eu/favicon.png" type="image/png">
+    <title>Python in Practice</title>
+    <meta name="description" content="Python in Practice book, Compare PDFs, DiffPDF, diffpdfc, Python">
+    <meta name="keywords" content="Compare, PDF, DiffPDF, diffpdfc, Python">
+<script src="./Python in Practice_files/BookImages.js"></script>
+<script>
+var bookImages = new BookImages("pipbook");
+</script>
+<link rel="stylesheet" id="coToolbarStyle" href="chrome-extension://nppllibpnmahfaklnpggkibhkapjkeob/toolbar/styles/placeholder.css" type="text/css"><script type="text/javascript" id="cosymantecbfw_removeToolbar">(function () {				var toolbarElement = {},					parent = {},					interval = 0,					retryCount = 0,					isRemoved = false;				if (window.location.protocol === 'file:') {					interval = window.setInterval(function () {						toolbarElement = document.getElementById('coFrameDiv');						if (toolbarElement) {							parent = toolbarElement.parentNode;							if (parent) {								parent.removeChild(toolbarElement);								isRemoved = true;								if (document.body && document.body.style) {									document.body.style.setProperty('margin-top', '0px', 'important');								}							}						}						retryCount += 1;						if (retryCount > 10 || isRemoved) {							window.clearInterval(interval);						}					}, 10);				}			})();</script><script type="text/javascript" id="waxCS">var WAX = function () { var _arrInputs; return { getElement: function (i) { return _arrInputs[i]; }, setElement: function(i){ _arrInputs=i; } } }(); function waxGetElement(i) { return WAX.getElement(i); } function coSetPageData(t, d){ if('wax'==t) { WAX.setElement(d);} }</script><script type="text/javascript" id="waxCS">var WAX = function () { var _arrInputs; return { getElement: function (i) { return _arrInputs[i]; }, setElement: function(i){ _arrInputs=i; } } }(); function waxGetElement(i) { return WAX.getElement(i); } function coSetPageData(t, d){ if('wax'==t) { WAX.setElement(d);} }</script></head>
+<body style="padding-top: 31px !important;">
+
+<!-- Navigation -->
+<div class="navbar">
+<p class="nav-caption nav-caption-first">Qtrac Ltd.</p>
+<div class="nav">
+<p><a href="http://www.qtrac.eu/index.html">Home</a></p>
+</div>
+<p class="nav-caption">Software</p>
+<div class="nav">
+<p class="nav-link"><a href="http://www.qtrac.eu/diffpdf.html">DiffPDF</a> (compare PDFs)</p>
+<p class="nav-link"><a href="http://www.qtrac.eu/diffpdfc.html">diffpdfc</a> (compare PDFs)</p>
+</div>
+<!--
+<p class="nav-caption">Courses</p>
+<div class="nav">
+<p class="nav-link"><a href="pypro.html">Python Programming</a></p>
+<p class="nav-link"><a href="interadvpy.html">Intermediate/Advanced
+Python</a></p>
+</div>
+-->
+<p class="nav-caption">Books</p>
+<div class="nav">
+<p class="nav-here">Python in Practice
+    </p><div class="nav-sub">
+    <p class="nav-link-sub"><a href="http://www.qtrac.eu/pipbook.html#toc">Contents &amp; Cover</a></p>
+    <p class="nav-link-sub"><a href="http://www.qtrac.eu/pipbook.html#eg">Downloads</a></p>
+    <p class="nav-link-sub"><a href="http://www.qtrac.eu/pipbook.html#reviews">Reviews</a></p>
+    <p class="nav-link-sub"><a href="http://www.qtrac.eu/pipbook-errata.html">Errata</a></p>
+    <p class="nav-link-sub"><a href="http://www.qtrac.eu/pipbook-translations.html">Translations</a></p>
+    </div>
+<p></p>
+<p class="nav-link"><a href="http://www.qtrac.eu/py3book.html">Programming in Python&nbsp;3</a></p>
+<p class="nav-link"><a href="http://www.qtrac.eu/gobook.html">Programming in Go</a></p>
+<p class="nav-link"><a href="http://www.qtrac.eu/aqpbook.html">Advanced Qt Programming</a></p>
+<p class="nav-link"><a href="http://www.qtrac.eu/pyqtbook.html">Rapid GUI Programming with Python and Qt</a></p>
+<p class="nav-link">~<a href="http://www.qtrac.eu/biblio.html">Annotated Bibliography</a>~</p>
+</div>
+<p class="nav-caption">Game</p>
+<div class="nav">
+<p class="nav-link"><a href="http://www.qtrac.eu/gravitate.html">Gravitate</a></p>
+</div>
+<p class="nav-caption">All Writing &amp; Software</p>
+<div class="nav">
+<p class="nav-link"><a href="http://www.qtrac.eu/marksummerfield.html">Mark Summerfield</a></p>
+</div>
+<a class="nav-book" id="bookurl" name="bookurl" href="./Python in Practice_files/Python in Practice.html">
+<img class="copyright" id="bookimage" alt="Book Cover" border="0" src="./Python in Practice_files/pipbookvs.png" width="200" height="264"></a>
+<!-- Change the above src to this page's book if it is a *book*.html page -->
+<!-- Footer -->
+<p class="nav-link" style="text-align: center;"><a href="http://www.qtrac.eu/privacy.html">Privacy</a></p>
+<p class="copyright">
+Copyright © <span id="year">2013-16</span> <a href="http://www.qtrac.eu/about.html">Qtrac&nbsp;Ltd.</a>
+All&nbsp;Rights&nbsp;Reserved.</p>
+<p class="copyright">
+<a href="http://endsoftpatents.org/innovating-without-patents"><img style="border-width:0" src="./Python in Practice_files/esp-red_chicklet.png" width="80" height="15"></a>
+</p>
+</div>
+
+<!-- Header -->
+<div class="captiondiv">
+<h1 id="top" class="title">Python in Practice</h1>
+<h2 class="subtitle2">Create Better Programs Using Concurrency,
+Libraries, and Patterns
+<br>
+by <i>Mark Summerfield</i></h2>
+<h3 class="subsubtitle">ISBN-10: 0321905636&nbsp;–&nbsp;ISBN-13:
+978-0321905635</h3>
+<h3 class="subsubtitle"><font color="red">Dr Dobbs JOLT best
+book award winner</font></h3>
+</div>
+
+<!-- Body -->
+
+<div style="float: right; width: 210px; height: 210px; margin: 5px;">
+<a href="http://www.drdobbs.com/joltawards/jolt-awards-the-best-books/240169070?pgno=7"><img src="./Python in Practice_files/jolt.png" alt="JOLT award"></a>
+</div>
+
+<p class="shout">
+Chapter 1 is available free from
+<a href="http://click.linksynergy.com/link?id=FGSCzRMOTK8&amp;offerid=145238.1970536&amp;type=2&amp;murl=http%3A%2F%2Fwww.informit.com%2Fstore%2Fproduct.aspx%3Fisbn%3D0321905636">InformIT</a><img border="0" width="1" height="1" src="./Python in Practice_files/show">; click the “Sample Content” tab, then scroll to the bottom and click
+the “Download the sample pages” link.
+</p>
+
+<p class="shout">
+This book is aimed at existing Python programmers who want to take their
+Python programming to the next level. (Those new to Python&nbsp;3 should
+read <a href="http://www.qtrac.eu/py3book.html">Programming in Python&nbsp;3</a> first.)
+</p>
+
+<p class="shout">
+The book's first few chapters show how to implement the programming
+<i>design patterns</i> in Python&nbsp;3 to produce more elegant and
+maintainable code. The book then goes on to look at how to improve
+program performance using concurrency, using external libraries written
+in C or C++, and using compiled Python. The book also introduces a couple
+of approaches to high-level networking that allow programmers to focus
+on their application logic and leave the low-level details to
+libraries. Then, the book introduces GUI programming with Tkinter. And
+the book finishes up with a chapter on 3D graphics using OpenGL.
+</p>
+
+<p class="shout">
+The book is packed with examples that not only illustrate the major
+topics it covers, but which also demonstrate many useful Python features
+and idioms. The book also introduces many modules both from the standard
+library and from important third-party libraries.
+</p>
+  
+<p>
+The book is 336 pages, and is published by Addison-Wesley Professional.
+It can be ordered from
+<a href="http://click.linksynergy.com/link?id=FGSCzRMOTK8&amp;offerid=145238.1970536&amp;type=2&amp;murl=http%3A%2F%2Fwww.informit.com%2Fstore%2Fproduct.aspx%3Fisbn%3D0321905636">InformIT</a><img border="0" width="1" height="1" src="./Python in Practice_files/show">,
+<a href="http://www.amazon.com/gp/product/0321905636/ref=as_li_qf_sp_asin_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=0321905636&amp;linkCode=as2&amp;tag=qtrltd-20">Amazon.com</a><img src="./Python in Practice_files/ir" width="1" height="1" border="0" alt="" style="border:none !important;
+margin:0px !important;">,
+<a href="http://www.amazon.co.uk/gp/product/0321905636/ref=as_li_qf_sp_asin_tl?ie=UTF8&amp;camp=1634&amp;creative=6738&amp;creativeASIN=0321905636&amp;linkCode=as2&amp;tag=qtrltd-21">Amazon.co.uk</a><img src="./Python in Practice_files/ir(1)" width="1" height="1" border="0" alt="" style="border:none !important;
+margin:0px !important;">,
+or from your preferred online or local book store.
+</p>
+
+<p>
+Only the English printed editions are <i>definitive</i>—although available
+in electronic formats, "ebooks" usually restrict your rights, and they
+are often retypeset which can introduce errors. A legal PDF version is
+available from
+<a href="http://click.linksynergy.com/link?id=FGSCzRMOTK8&amp;offerid=145238.1970536&amp;type=2&amp;murl=http%3A%2F%2Fwww.informit.com%2Fstore%2Fproduct.aspx%3Fisbn%3D0321905636">InformIT</a><img border="0" width="1" height="1" src="./Python in Practice_files/show">.
+Translations are arranged by the publisher and their quality can vary
+considerably.
+</p>
+
+<p>
+<a href="http://www.informit.com/blogs/blog.aspx?uk=QA-with-2014-Jolt-Award-Winner-Python-in-Practice-Author-Mark-Summerfield">Q&amp;A
+with 2014 Jolt Award Winner: "Python in Practice" Author</a>.
+</p>
+
+<h2 id="eg">Downloads</h2>
+<p>
+The source code is available in two formats,
+<a href="http://www.qtrac.eu/pipbook-1.0.tar.gz">pipbook-1.0.tar.gz</a> (274K suitable for any
+platform), and
+<a href="http://www.qtrac.eu/pipbook-1.0.zip">pipbook-1.0.zip</a> (418K Windows line
+endings)
+<font color="brown">[updated 2015-10-22]</font>—they are
+GPL-licensed.
+There is also an <a href="http://www.qtrac.eu/pipbook-errata.html">Errata</a>
+<font color="brown">[updated 2013-10-22]</font>.
+</p>
+
+<div style="float: right; margin: 1em; max-width: 389px;">
+<img alt="Python in Practice book cover" src="./Python in Practice_files/pipbookm.png" width="400" height="513">
+<h3 id="reviews">Reviews<!-- and Unsolicited Comments--></h3>
+<ul>
+<li><a href="http://www.drdobbs.com/joltawards/jolt-awards-the-best-books/240169070?pgno=7"><font color="red">Dr
+Dobbs JOLT best book award winner</font></a></li>
+<li><a href="http://www.drdobbs.com/tools/developers-reading-list/240164389?pgno=2">Dr Dobbs Developer's Reading List</a></li>
+<!--<li><i>""</i></li>-->
+</ul>
+</div>
+
+<h2 id="toc"> Table of Contents</h2>
+<ul class="toptoc">
+<li>Foreword by Doug Hellmann<a href="http://www.qtrac.eu/pipbook.html#doug"><sup>*</sup></a></li>
+<li>Introduction</li>
+    <ul class="toc">
+    <li>Acknowledgements</li>
+    </ul>
+<li>Chapter 1. Creational Design Patterns</li>
+    <ul class="toc">
+    <li>Abstract Factory Pattern</li>
+	<ul class="toc">
+	<li>A Classic Abstract Factory</li>
+	<li>A More Pythonic Abstract Factory</li>
+	</ul>
+    <li>Builder Pattern</li>
+    <li>Factory Method Pattern</li>
+    <li>Prototype Pattern</li>
+    <li>Singleton Pattern</li>
+    </ul>
+<li>Chapter 2. Structural Design Patterns</li>
+    <ul class="toc">
+    <li>Adapter Pattern</li>
+    <li>Bridge Pattern</li>
+    <li>Composite Pattern</li>
+	<ul class="toc">
+	<li>A Classic Composite/Noncomposite Hierarchy</li>
+	<li>A Single Class for (Non)Composites</li>
+	</ul>
+    <li>Decorator Pattern</li>
+	<ul class="toc">
+	<li>Function and Method Decorators</li>
+	<li>Class Decorators</li>
+	</ul>
+    <li>Facade Pattern</li>
+    <li>Flyweight Pattern</li>
+    <li>Proxy Pattern</li>
+    </ul>
+<li>Chapter 3. Behavioral Design Patterns</li>
+    <ul class="toc">
+    <li>Chain of Responsibility Pattern</li>
+	<ul class="toc">
+	<li>A Conventional Chain</li>
+	<li>A Coroutine-based Chain</li>
+	</ul>
+    <li>Command Pattern</li>
+    <li>Interpreter Pattern</li>
+	<ul class="toc">
+	<li>Expression Evaluation with eval()</li>
+	<li>Code Evaluation with exec()</li>
+	<li>Code Evaluation using a Subprocess</li>
+	</ul>
+    <li>Iterator Pattern</li>
+	<ul class="toc">
+	<li>Sequence Protocol Iterators</li>
+	<li>Two-argument iter() Function Iterators</li>
+	<li>Iterator Protocol Iterators</li>
+	</ul>
+    <li>Mediator Pattern</li>
+	<ul class="toc">
+	<li>A Conventional Mediator</li>
+	<li>A Coroutine-based Mediator</li>
+	</ul>
+    <li>Memento Pattern</li>
+    <li>Observer Pattern</li>
+    <li>State Pattern</li>
+	<ul class="toc">
+	<li>Using State-Sensitive Methods</li>
+	<li>Using State-Specific Methods</li>
+	</ul>
+    <li>Strategy Pattern</li>
+    <li>Template Method Pattern</li>
+    <li>Visitor Pattern</li>
+    <li>Case Study: An Image Package</li>
+    </ul>
+<li>Chapter 4. High-Level Concurrency</li>
+    <ul class="toc">
+    <li>CPU-bound Concurrency</li>
+	<ul class="toc">
+	<li>Using Queues and Multiprocessing</li>
+	<li>Using Futures and Multiprocessing</li>
+	</ul>
+    <li>I/O-bound Concurrency</li>
+	<ul class="toc">
+	<li>Using Queues and Threading</li>
+	<li>Using Futures and Threading</li>
+	</ul>
+    <li>Case Study: A Concurrent GUI Application</li>
+    </ul>
+<li>Chapter 5. Extending Python</li>
+    <ul class="toc">
+    <li>Accessing C Libraries with ctypes</li>
+    <li>Using Cython</li>
+	<ul class="toc">
+	<li>Accessing c Libraries with Cython</li>
+	<li>Writing Cython Modules for Greater Speed</li>
+	</ul>
+    <li>Case Study: An Accelerated Image Package</li>
+    </ul>
+<li>Chapter 6. High-Level Networking</li>
+    <ul class="toc">
+    <li>Writing XML-RPC Applications</li>
+	<ul class="toc">
+	<li>A Data Wrapper</li>
+	<li>Writing XML-RPC Servers</li>
+	<li>Writing XML-RPC Clients</li>
+	</ul>
+    <li>Writing RPyC Applications</li>
+	<ul class="toc">
+	<li>A Thread-Safe Data Wrapper</li>
+	<li>Writing RPyC Servers</li>
+	<li>Writing RPyC Clients</li>
+	</ul>
+    </ul>
+<li>Chapter 7. Graphical User Interfaces with Tkinter</li>
+    <ul class="toc">
+    <li>Introduction to Tkinter</li>
+    <li>Creating Dialogs with Tkinter</li>
+	<ul class="toc">
+	<li>Creating a Dialog-style Application</li>
+	<li>Creating Application Dialogs</li>
+	</ul>
+    <li>Creating Main Window Applications with Tkinter</li>
+	<ul class="toc">
+	<li>Creating a Main Window</li>
+	<li>Creating Menus</li>
+	<li>Creating a Status Bar with Indicators</li>
+	</ul>
+    </ul>
+<li>Chapter 8. OpenGL 3D Graphics</li>
+    <ul class="toc">
+    <li>A Perspective Scene</li>
+	<ul class="toc">
+	<li>Creating a Cylinder with PyOpenGL</li>
+	<li>Creating a Cylinder with pyglet</li>
+	</ul>
+    <li>An Orthographic Game</li>
+	<ul class="toc">
+	<li>Drawing the Board Scene</li>
+	<li>Handling Scene Object Selection</li>
+	<li>Handling User Interaction</li>
+	</ul>
+    </ul>
+<li>Appendix A: Epilogue</li>
+<li>Appendix B: Selected Bibliograpy</li>
+<li>Index</li>
+</ul>
+
+<hr>
+
+<p>See also my <a href="http://www.qtrac.eu/index.html#pytips">Python Programming Tips</a>.</p>
+
+<p>
+For more about Python see <a href="http://www.python.org/">www.python.org</a>.
+</p>
+
+<p>
+Two other useful books on Python&nbsp;3, and worthy companions to
+this book are the
+<a href="http://www.amazon.com/gp/product/1449340377/ref=as_li_tf_tl?ie=UTF8&amp;camp=1789&amp;creative=9325&amp;creativeASIN=1449340377&amp;linkCode=as2&amp;tag=qtrltd-20">Python
+Cookbook (3rd ed.)</a><img src="./Python in Practice_files/ir(2)" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;">
+by David Beazley and Brian K.&nbsp;Jones,
+and 
+<a rel="nofollow" href="http://www.amazon.com/gp/product/1491946008/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=390957&amp;creativeASIN=1491946008&amp;linkCode=as2&amp;tag=qtrltd-20&amp;linkId=5HLRTINR7VJE4VU4">Fluent
+Python</a><img src="./Python in Practice_files/ir(3)" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;">
+by Luciano Ramalho.
+</p>
+
+<p>
+Like <a href="http://www.qtrac.eu/marksummerfield.html">all my books and most of my other writings</a>, this book was written using <a href="http://www.qtrac.eu/lout.html">The Lout
+Typesetting System</a>.
+</p>
+
+<p id="doug">
+<sup>*</sup> Doug Hellman is a well known Python expert and author of 
+<a href="http://www.amazon.com/gp/product/0321767349/ref=as_li_tl?ie=UTF8&amp;camp=1789&amp;creative=390957&amp;creativeASIN=0321767349&amp;linkCode=as2&amp;tag=qtrltd-20&amp;linkId=DIWGMPTJCGIKJ3KM">The
+Python Standard Library by Example</a><img src="./Python in Practice_files/ir(4)" width="1" height="1" border="0" alt="" style="border:none !important;
+margin:0px !important;">.
+</p>
+
+<p><a href="http://www.qtrac.eu/pipbook.html#top">Top</a></p><hr>
+<script src="./Python in Practice_files/Year.js"></script>
+<script>
+Year();
+</script>
+
+
+</body><div id="coFrameDiv" style="display: block; height: 31px;"><iframe id="coToolbarFrame" src="./Python in Practice_files/placeholder.html" style="width: 100%; display: block; height: 31px;"></iframe></div></html>
